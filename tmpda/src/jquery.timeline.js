@@ -113,7 +113,7 @@
     Plugin.prototype.createDescription = function (item) {
 
         var $p = item.description
-            ? $('<p />').addClass('timeline-item-description timeline-item') 
+            ? $('<p />').addClass('timeline-item-description timeline-item')
             : null;
 
         var content = this.prepareContent(item.description);
@@ -169,7 +169,7 @@
     $.fn.timeline.defaults = {
         container : '[data-timeline]',
         apiUrl: null,
-        allowRawContent: false,
+        allowRawContent: true,
         transformer: function (data) {
             return data;
         }
