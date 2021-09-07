@@ -19,9 +19,9 @@
     Plugin.prototype.resolveApiUrl = function ()
     {
         var dataApiUrl = this.options.container.data('timeline');
-        
+
         if (!this.options.apiUrl && !dataApiUrl) throw new Error('No api url found');
-        
+
         if (!this.options.apiUrl) this.options.apiUrl = dataApiUrl;
 
         return this;
@@ -63,9 +63,9 @@
 
         Object.keys(data).forEach(function (year) {
            self.createYearLabel(year).appendTo(self.options.container);
-           
+
            var $wrapper = $('<div />').addClass('timeline-item-wrapper');
-           
+
            data[year].forEach(function (item) {
                 self.createItem(item).appendTo($wrapper);
            });
@@ -82,27 +82,27 @@
 
         var $container = $('<div />').addClass('timeline-year-container timeline-item')
         $('<span />').addClass('timeline-year-label').text(year).appendTo($container);
-        
+
         return $container;
-    };    
+    };
 
     Plugin.prototype.createTitle = function (item) {
 
-        var $title = item.link 
+        var $title = item.link
             ? $('<a />').attr({href: item.link.trim(), target: '_blank'})
-                .addClass('timeline-item-title timeline-item').text(item.title.trim()) 
-           
+                .addClass('timeline-item-title timeline-item').text(item.title.trim())
+
             : $('<div />').addClass('timeline-item-title timeline-item')
                 .text(item.title.trim());
-        
+
         return $title;
     };
 
     Plugin.prototype.createImage = function (item) {
 
-        var $image = item.image 
+        var $image = item.image
             ? $('<img />').attr('src', item.image.trim())
-                .addClass('timeline-item-image timeline-item') 
+                .addClass('timeline-item-image timeline-item')
             : null;
 
         if (!item.link) return $image;
@@ -112,33 +112,33 @@
 
     Plugin.prototype.createDescription = function (item) {
 
-        var $p = item.description 
-            ? $('<p />').addClass('timeline-item-description timeline-item') 
+        var $p = item.description
+            ? $('<p />').addClass('timeline-item-description timeline-item').text(item.p.trim());
             : null;
-        
+
         var content = this.prepareContent(item.description);
-        
+
         if ($p && item.link) $('<a />')
             .attr({ href: item.link.trim(), target: '_blank' })
             .append(content).appendTo($p);
 
         else if ($p) $p.append(content);
-        
+
         return $p;
     };
 
     Plugin.prototype.prepareContent = function (content) {
 
         if(this.options.allowRawContent) return $('<span />').html(content);
-        
+
         return $('<span />').text(content);
     };
 
-    Plugin.prototype.createItem = function (item) {    
+    Plugin.prototype.createItem = function (item) {
 
         var $container  = $('<div />').addClass('timeline-item-container');
         var $body       =  $('<div />').addClass('timeline-item-body');
-        
+
         var $image          = this.createImage(item);
         var $description    = this.createDescription(item);
 
