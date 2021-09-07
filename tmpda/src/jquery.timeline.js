@@ -62,7 +62,7 @@
         var self = this, data = this.options.transformer(response);
 
         Object.keys(data).forEach(function (year) {
-            alert(year);
+            alert("123"+year);
            self.createYearLabel(year).appendTo(self.options.container);
 
            var $wrapper = $('<div />').addClass('timeline-item-wrapper');
