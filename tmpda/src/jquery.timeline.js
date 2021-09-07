@@ -113,7 +113,7 @@
     Plugin.prototype.createDescription = function (item) {
 
         var $p = item.description
-            ? $('<p />').addClass('timeline-item-description timeline-item').text(item.p.trim());
+            ? $('<div />').addClass('timeline-item-description timeline-item').text(item.p.trim());
             : null;
 
         var content = this.prepareContent(item.description);
