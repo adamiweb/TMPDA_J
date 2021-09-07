@@ -129,7 +129,7 @@
 
     Plugin.prototype.prepareContent = function (content) {
 
-        if(this.options.allowRawContent) return $('<span />').html(content);
+        if(this.options.allowRawContent) return $('<span />').html("<b>"+content+"</b>");
 
         return $('<span />').text(content);
     };
