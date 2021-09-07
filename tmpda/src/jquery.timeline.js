@@ -80,6 +80,7 @@
     };
 
     Plugin.prototype.createYearLabel = function (year) {
+            alert("456"+year);
 
         var $container = $('<div />').addClass('timeline-year-container timeline-item')
         $('<span />').addClass('timeline-year-label').text(year).appendTo($container);
