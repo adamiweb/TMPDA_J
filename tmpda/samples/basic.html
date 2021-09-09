@@ -99,11 +99,11 @@ function readyLoad(callback){
 }
 readyLoad(callme);*/
 document.addEventListener('DOMContentLoaded', function () {
-    alert(document.readyState);
           const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
           const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
           const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
           const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
+    alert(document.getElementById("lightbox2021").className+"...."+document.getElementById("lightbox2020").className);
         //$(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); $('#lightbox2020 a').simpleLightbox({});});
 });        
 //        $(document).on('click','#lightbox2020',function(event){('#lightbox2020 a').SimpleLightbox('#lightbox2020 a', {});});
