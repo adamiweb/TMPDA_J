@@ -102,6 +102,8 @@ window.addEventListener("load", function(event) {
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
         $('body').on('click','#lightbox2020 a',function(event){
            lightbox2020.refresh; $('#lightbox2020 > a').open; event.preventDefault(); });
+        $('body').on('click','#lightbox2021 a',function(event){
+           lightbox2021.destroy; $('#lightbox2021 > a').close; event.preventDefault(); });
 });
         
         $(function() {
