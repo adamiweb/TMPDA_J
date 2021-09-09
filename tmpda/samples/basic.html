@@ -68,13 +68,13 @@
     <script src="../dist/simple-lightbox.jquery.min.js"></script>
     <script>
         (function() {
-          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
+         // const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
           const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
           const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
           const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
           const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
         })();
-        $('[class="lg"]').on('click', function(event){/*$('#lightbox2021 a').simpleLightbox();*/alert("hi!");});
+        $('[id="lightbox2021"]').on('click', function(event){/*$('#lightbox2021 a').simpleLightbox();*/alert("hi!");});
     </script>
 </body>
 </html>
