@@ -107,9 +107,7 @@ window.addEventListener("load", function(event) {
           const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
           const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
         $('body').on('click','#lightbox2020 a',function(event){
-            event.preventDefault(); alert("1");$('#lightbox2021 a').on('show.simplelightbox', function () {
-	alert("fuck");
-});alert("2");});
+            event.preventDefault(); $('#lightbox2021 a').simpleLightbox();
 });
 /*document.addEventListener('DOMContentLoaded', function () {
           const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
