@@ -49,7 +49,6 @@
             text-decoration: none;
         }
     </style>
-    <script type="module" src="../dist/simple-lightbox.esm.js"></script>
 
 </head>
 <body>
@@ -74,8 +73,8 @@
           const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
           const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
           const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-            lightbox2020.refresh();
         })();
+        $('[id="lightbox2021"]').on('click', function (event) {$('#lightbox2021 a').simpleLightbox();}
     </script>
 </body>
 </html>
