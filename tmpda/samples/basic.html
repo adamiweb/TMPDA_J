@@ -64,7 +64,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="../dist/jquery.timeline.min.js"></script>
-    <script src="../dist/simple-lightbox.jquery.js"></script>
     <script src="../dist/simple-lightbox.jquery.min.js"></script>
     <script>
         (function() {
@@ -75,7 +74,7 @@
           const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
         })();
 //        $(document).on('click','#lightbox2020',function(event){('#lightbox2020 a').SimpleLightbox('#lightbox2020 a', {});});
-        $(document).on('click','div#lightbox2020 a',function(event){alert("123");lightbox2020.open();});
+        $(document).on('click','div#lightbox2020 a',function(event){alert("123");new SimpleLightbox('#lightbox2021 a', {});});
     </script>
 </body>
 </html>
