@@ -98,6 +98,9 @@ function readyLoad(callback){
 //    callback();
 }
 readyLoad(callme);*/
+    document.addEventListener('readystatechange',function(){
+      console.log('document ' + document.readyState);
+    })
 document.addEventListener('DOMContentLoaded', function () {
           const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
           const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
