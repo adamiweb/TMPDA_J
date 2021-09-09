@@ -98,6 +98,9 @@ function readyLoad(callback){
 //    callback();
 }
 readyLoad(callme);*/
+window.addEventListener("load", function(event) {
+      console.log('document ' + document.readyState);
+});
     document.addEventListener('readystatechange',function(){
       console.log('document ' + document.readyState);
     })
