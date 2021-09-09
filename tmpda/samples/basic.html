@@ -79,23 +79,25 @@
 //        $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
 //        });
 
-        function run(){
+        function callme(){
             alert(document.readyState+".....");
-          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
-          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
-          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
-          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
+            const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+            const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
+            const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
+            const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
 }
 function readyLoad(callback){
- if(Document.readyState === 'complete'){
+/* if(Document.readyState === 'complete'){
    callback();
  } else{
    document.addEventListener('load', function() {
      callback();
    });
  }
+ */
+    callback();
 }
-readyLoad(run);
+readyLoad(callme);
         
 //        $(document).on('click','#lightbox2020',function(event){('#lightbox2020 a').SimpleLightbox('#lightbox2020 a', {});});
     </script>
