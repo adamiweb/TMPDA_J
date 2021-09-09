@@ -88,7 +88,7 @@
 document.addEventListener('load', function(){callme();});
 }
 function readyLoad(callback){
- if(Document.readyState === 'complete'){
+/* if(Document.readyState === 'complete'){
     callback();
     alert(document.readyState+".....2");
     document.on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
@@ -96,7 +96,9 @@ function readyLoad(callback){
    document.addEventListener('load', function() {
      callback();
    });
- }
+ }*/
+    alert(document.readyState+".....2");
+    document.on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
 }
 readyLoad(callme);
         
