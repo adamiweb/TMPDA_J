@@ -80,17 +80,17 @@
 //        });
 
         function callme(){
-            alert(document.readyState+".....");
+            alert(document.readyState+".....2");
             const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
             const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
             const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
             const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-    $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); $('#lightbox2020').simpleLightbox({});});
+    $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); $('#lightbox2020 a').simpleLightbox({});});
 }
 function readyLoad(callback){
- if(Document.readyState === 'complete'){
+ if(Document.readyState === 'interactive'){
     callback();
-    alert(document.readyState+".....2");
+    alert(document.readyState+".....1");
 /* } else{
    document.addEventListener('load', function() {
      callback();
