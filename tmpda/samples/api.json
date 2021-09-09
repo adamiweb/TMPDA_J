@@ -18,7 +18,7 @@
     "2019" : [
         {
             "title": "參加2019香港國際影視展",
-            "image" : "https://dummyimage.com/600x400/000/fff",
+            "image" : "./InfoDocs/news/PhotosOfEvent2020.jpg,https://dummyimage.com/600x200/000/fff",
             "description": "2019年3月，由協會組團參加2019香港國際影視展，並在兩岸影視交流上取得突破性的進展，由吳理事長代表與福建省電影局局長陳立華先生簽訂「閩台電影文化交流合作備忘錄」\n未來將與福建方面在劇本創作、拍攝製作、宣傳發行、播出放映、對接洽商、投資合作以及在絲綢之路國際電影節、閩台電影周、金雞百花電影節等活動規劃上進行全面性合作。",
             "link": null
         },
@@ -33,7 +33,7 @@
     "2018" : [
         {
             "title": "參訪羅浮山影視基地",
-            "image" : "https://dummyimage.com/600x400/000/fff",
+            "image" : "./InfoDocs/news/PhotosOfEvent2020.jpg,https://dummyimage.com/600x200/000/fff",
             "description": "2018年1月5日至1月7日，本協會朱程吾理事、楊偉舟理事、孫正國理事、彭麗華秘書長一行赴深圳參加研討會並參訪羅浮山影視基地，由 MPA 何偉雄會長安排接待，並於今年三月的香港電影節舉辦結盟發布會，成立「亞太電影工業聯盟」。",
             "link": null
         },
@@ -78,7 +78,7 @@
     "2017" : [
         {
             "title": "拜訪香港大公文匯傳媒集團",
-            "image" : "https://dummyimage.com/600x400/000/fff",
+            "image" : "./InfoDocs/news/PhotosOfEvent2020.jpg,https://dummyimage.com/600x200/000/fff",
             "description": "2017年10月13日，台灣電影製作發展協會吳高雄理事長一行到訪香港大公文匯傳媒集團，集團副總經理江正銀等熱情接待。",
             "link": null
         },
