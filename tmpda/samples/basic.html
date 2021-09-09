@@ -103,7 +103,7 @@ window.addEventListener("load", function(event) {
         $('body').on('click','#lightbox2020 a',function(event){
            lightbox2020.refresh; $('#lightbox2020 > a').open; event.preventDefault(); });
         $('body').on('click','#lightbox2021 a',function(event){
-           lightbox2021.destroy; $('#lightbox2021 > a').close; event.preventDefault(); });
+           lightbox2021.destroy; $('#lightbox2021 > a').destroy; event.stopPropagation(); });
 });
         
         $(function() {
