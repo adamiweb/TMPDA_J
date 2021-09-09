@@ -85,7 +85,7 @@
             const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
             const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
             const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-document.addEventListener('load', function(){callme();});
+    document.on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
 }
 function readyLoad(callback){
 /* if(Document.readyState === 'complete'){
@@ -97,8 +97,7 @@ function readyLoad(callback){
      callback();
    });
  }*/
-    alert(document.readyState+".....2");
-    document.on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
+    callback();
 }
 readyLoad(callme);
         
