@@ -88,14 +88,14 @@
 }
 const readyLoad = callback => {
  if(Document.readyState === 'complete'){
-//   callback()
-readyLoad(run);        
+   callback()
  } else{
    document.addEventListener('load', function() {
      callback()
    })
  }
 }
+readyLoad(run);
         
 //        $(document).on('click','#lightbox2020',function(event){('#lightbox2020 a').SimpleLightbox('#lightbox2020 a', {});});
     </script>
