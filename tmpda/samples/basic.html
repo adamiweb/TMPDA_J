@@ -114,7 +114,7 @@ window.addEventListener("load", function(event) {
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
 //        $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
         $('body').on('click','#lightbox2020 a',function(event){
-            event.preventDefault(); alert(lightbox2020); lightbox2020.destroy; $('#lightbox2020 > a').simpleLightbox; alert($('#lightbox2020 > a').attr("href")); });
+            event.preventDefault(); alert(lightbox2020); lightbox2020.destroy; $('#lightbox2020 > a').destroy; $('#lightbox2020 > a').simpleLightbox; alert($('#lightbox2020 > a').attr("href")); });
         });
 
 /*document.addEventListener('DOMContentLoaded', function () {
