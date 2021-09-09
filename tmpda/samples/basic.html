@@ -79,16 +79,6 @@
 //        $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
 //        });
 
-const readyLoad = callback => {
- if(Document.readyState === 'complete'){
-   callback()
- } else{
-   document.addEventListener('load', function() {
-     callback()
-   })
- }
-}
-        
         const run = () => {
             alert(document.readyState);
           const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
@@ -96,7 +86,17 @@ const readyLoad = callback => {
           const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
           const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
 }
+const readyLoad = callback => {
+ if(Document.readyState === 'complete'){
+//   callback()
 readyLoad(run);        
+ } else{
+   document.addEventListener('load', function() {
+     callback()
+   })
+ }
+}
+        
 //        $(document).on('click','#lightbox2020',function(event){('#lightbox2020 a').SimpleLightbox('#lightbox2020 a', {});});
     </script>
 </body>
