@@ -67,8 +67,9 @@
     <script src="../dist/simple-lightbox.jquery.min.js"></script>
     <script>
         (function() {
-          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
-            lightbox2021.Open();
+//          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
+            var lightbox2021 = $('#lightbox2021 a').simpleLightbox();
+            lightbox2021.next();
           const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
           const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
           const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
