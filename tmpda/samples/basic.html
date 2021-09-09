@@ -96,6 +96,8 @@ function readyLoad(callback){
  }
  */
     callback();
+    alert(document.readyState+".....2");
+    $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
 }
 readyLoad(callme);
         
