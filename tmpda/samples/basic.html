@@ -85,15 +85,15 @@
             const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
             const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
             const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-document.addEventListener('loading', function(){callme();});
+document.addEventListener('load', function(){callme();});
 }
 function readyLoad(callback){
  if(Document.readyState === 'complete'){
     callback();
     alert(document.readyState+".....2");
-    $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
+    document.on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
  } else{
-   document.addEventListener('loading', function() {
+   document.addEventListener('load', function() {
      callback();
    });
  }
