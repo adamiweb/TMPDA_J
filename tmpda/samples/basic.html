@@ -91,12 +91,11 @@ function readyLoad(callback){
  if(Document.readyState === 'interactive'){
     callback();
     alert(document.readyState+".....1");
-/* } else{
+ } else{
    document.addEventListener('load', function() {
      callback();
-   });*/
+   });
  }
-readyLoad(callback);
 //    callback();
 }
 readyLoad(callme);
