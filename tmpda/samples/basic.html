@@ -104,7 +104,9 @@ window.addEventListener("load", function(event) {
           const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
           const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
           const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-    alert(document.getElementById("lightbox2021").className+"...."+document.getElementsByClassName("timeline-year-label")[0]);
+        $(document).on('click','#lightbox2020 a',function(event){
+            event.preventDefault();
+            if(!$lightbox2020){$lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});}});
 });
 /*document.addEventListener('DOMContentLoaded', function () {
           const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
