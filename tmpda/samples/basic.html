@@ -95,26 +95,26 @@ readyLoad(callme);*/
 //        import('../dist/simple-lightbox.modules.js')
 window.addEventListener("load", function(event) {
       //alert(document.readyState);
-          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
-          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
-          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
-          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
-          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-        $('body').on('click','#lightbox2020 a',function(event){
-            event.preventDefault(); lightbox2020.refresh; $('#lightbox2020 > a').open; alert($('#lightbox2020 > a').attr("href")); });
-});
-        
-        $(function() {
 //          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
-//            var lightbox2021 = $('#lightbox2021 a').simpleLightbox();
-//            lightbox2021.next();
 //          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
 //          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
 //          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-//        $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
         $('body').on('click','#lightbox2020 a',function(event){
-            event.preventDefault(); lightbox2020.refresh; $('#lightbox2020 > a').open; alert($('#lightbox2020 > a').attr("href")+"...2"); });
+            event.preventDefault(); lightbox2020.refresh; $('#lightbox2020 > a').open; });
+});
+        
+        $(function() {
+          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
+//            var lightbox2021 = $('#lightbox2021 a').simpleLightbox();
+//            lightbox2021.next();
+          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
+          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
+          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
+//        $(document).on('click','#lightbox2020 a',function(event){event.preventDefault(); alert($(this));alert($lightbox2020);alert(document.readyState);});
+//        $('body').on('click','#lightbox2020 a',function(event){
+//            event.preventDefault(); lightbox2020.refresh; $('#lightbox2020 > a').open; alert($('#lightbox2020 > a').attr("href")+"...2"); });
         });
 
 /*document.addEventListener('DOMContentLoaded', function () {
