@@ -77,10 +77,9 @@ window.addEventListener("load", function(event) {
 //          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
         $('body').on('click','#lightbox2020>a',function(event){
-             console.log($('#lightbox2020').attr("lightbox")+"...."+(typeof($('#lightbox2020').attr("lightbox")) == "undefined")+"......"+$('#lightbox2020').attr("id"));
+             //console.log($('#lightbox2020').attr("lightbox")+"...."+(typeof($('#lightbox2020').attr("lightbox")) == "undefined")+"......"+$('#lightbox2020').attr("id"));
             if(!$('#lightbox2020').attr("lightbox")||typeof($('#lightbox2020').attr("lightbox")) == "undefined"){
-                $('#lightbox2020').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox2020>a', {}); }
-            console.log($lightbox.close+"....."+$('#lightbox2020 > a').open);$lightbox.refresh();$lightbox.open();
+                $('#lightbox2020').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox2020>a', {}); $lightbox.refresh();$lightbox.open();}            
             event.preventDefault();});
 });
 //        $(function() {
