@@ -21,7 +21,7 @@
             cursor: pointer;
         }
         .goTop .goTopBtn .fa-arrow-alt-circle-up {
-            color: #E8E8E8;
+            color: #3d82ad;
         }
         .goTop {
             position: fixed;
@@ -31,18 +31,12 @@
             transform: translateY(0);
 
             &.hide {
-            transform: translateY(-100px);
+            transform: translateY(-100%);
             }
             
             &:hover {
-            color: #E8E8E8;
-        }
-        .xxx {
-            transition: transform 0.2s;
-            transform: translateX(220%);
-        }
-        .xfa-arrow-alt-circle-up {
-            content: "\f35b"
+                color: #E8E8E8;
+            }
         }
     </style>
 </head>
@@ -115,7 +109,6 @@ $(function() {
       );
     });
 
-/*    
     $(window).scroll(function () {
       if ($(window).scrollTop() > 200) {
         if ($(".goTop").hasClass("hide")) {
@@ -125,7 +118,7 @@ $(function() {
         $(".goTop").addClass("hide");
       }
     });
-    */
+
 });
         
 window.addEventListener("load", function(event) {
@@ -139,16 +132,7 @@ window.addEventListener("load", function(event) {
 //          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
 
-    $(window).scroll(function () {
-        console.log($(window).scrollTop());
-      if ($(window).scrollTop() > 200) {
-        if ($(".goTop").hasClass("hide")) {
-          $(".goTop").toggleClass("hide");
-        }
-      } else {
         $(".goTop").addClass("hide");
-      }
-    });
 
 
 //2019
