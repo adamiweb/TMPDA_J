@@ -79,7 +79,7 @@ window.addEventListener("load", function(event) {
         $('body').on('click','#lightbox2020>a',function(event){
             event.preventDefault(); console.log($('#lightbox2020').attr("lightbox")+"...."+(typeof($('#lightbox2020').attr("lightbox")) == "undefined")+"......"+$('#lightbox2020').attr("id"));
             if(!$('#lightbox2020').attr("lightbox")||typeof($('#lightbox2020').attr("lightbox")) == "undefined"){
-                $('#lightbox2020').attr("lightbox",true);$lightbox2020=new SimpleLightbox('#lightbox2020 a', {});$lightbox2020.refresh;$lightbox2020.open;
+                $('#lightbox2020').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox2020 a', {});$('#lightbox2020 > a').open;
                 console.log($(this)+"...."+$lightbox2020+"....."+lightbox2020+"......"+($lightbox2020 == lightbox2020));} });
 });
 //        $(function() {
