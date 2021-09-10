@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="../dist/simple-lightbox.css">
     <link rel='stylesheet' href='https://hsuchihting.github.io/lib/font-awesome/css/font-awesome.min.css'>
     <style>
+.fa {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.fa-3x {
+    font-size:3em
+}
         .goTop .goTopBtn {
             background-color: transparent;
             border: none;
@@ -32,6 +42,23 @@
         .goTop.hide {
           transform: translateX(120%);
         }
+        .fa-arrow-alt-circle-up:before {
+            content: "\f35b"
+        }
+.goTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  .goTopBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    .fa-arrow-alt-circle-up {
+      color: $primary;
+    }
+  }
+}
     </style>
 </head>
 <body>
