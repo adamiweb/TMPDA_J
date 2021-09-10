@@ -68,17 +68,16 @@ $(function() {
 
 window.addEventListener("load", function(event) {
       //alert(document.readyState);
-          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
-          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+//          var $lightbox2020;
+//          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+//          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
+//          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
 
-    $lightbox2020.refresh;
 //          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
 //          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-        $('body').on('click','#lightbox2021>a',function(event){
-            event.stopPropagation(); console.log($(this).html()); });
         $('body').on('click','#lightbox2020>a',function(event){
-            event.preventDefault(); console.log($(this).html()); $lightbox2020.open; });
+            event.preventDefault(); console.log($('#lightbox2021').hasAttribute('lightbox')); if(!$('#lightbox2021').hasAttribute('lightbox')){$('#lightbox2021').setAttribute('lightbox', true);new SimpleLightbox('#lightbox2021 a', {});} });
 });
 //        $(function() {
 //          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
