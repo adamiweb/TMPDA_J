@@ -21,17 +21,17 @@
             cursor: pointer;
         }
         .goTop .goTopBtn .fa-arrow-alt-circle-up {
-            color: #3d82ad;
+            color: #E8E8E8;
         }
         .goTop {
             position: fixed;
             right: 10px;
             bottom: 10px;
             transition: transform 0.5s;
-            transform: translateX(0);
+            transform: translateY(0);
 
             &.hide {
-            transform: translateX(-100px);
+            transform: translateY(-100px);
             }
             
             &:hover {
@@ -126,17 +126,6 @@ $(function() {
       }
     });
     */
-    $(window).scroll(function () {
-        console.log($(window).scrollTop());
-      if ($(window).scrollTop() > 200) {
-        if ($(".goTop").hasClass("hide")) {
-          $(".goTop").toggleClass("hide");
-        }
-      } else {
-        $(".goTop").addClass("hide");
-      }
-    });
-
 });
         
 window.addEventListener("load", function(event) {
@@ -149,6 +138,18 @@ window.addEventListener("load", function(event) {
 //          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
 //          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
+
+    $(window).scroll(function () {
+        console.log($(window).scrollTop());
+      if ($(window).scrollTop() > 200) {
+        if ($(".goTop").hasClass("hide")) {
+          $(".goTop").toggleClass("hide");
+        }
+      } else {
+        $(".goTop").addClass("hide");
+      }
+    });
+
 
 //2019
         $('body').on('click','#lightbox20191>a',function(event){
