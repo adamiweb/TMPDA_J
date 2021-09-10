@@ -62,13 +62,16 @@ readyLoad(callme);*/
 //        import('../dist/simple-lightbox.modules.js')
 
 $(function() {
-          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
-          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+//          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
+//          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
    });
 
 window.addEventListener("load", function(event) {
       //alert(document.readyState);
-           $lightbox2020.refresh;
+          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
+          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+
+    $lightbox2020.refresh;
 //          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
 //          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
