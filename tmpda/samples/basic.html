@@ -69,17 +69,20 @@ $(function() {
 window.addEventListener("load", function(event) {
       //alert(document.readyState);
 //          var $lightbox2020;
-          var $lightbox2020;
+          var $lightbox20191,$lightbox20192;
 //          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
 //          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
 
 //          const $lightbox2019 = new SimpleLightbox('#lightbox2019 a', {});
 //          const $lightbox2018 = new SimpleLightbox('#lightbox2018 a', {});
 //          const $lightbox2017 = new SimpleLightbox('#lightbox2017 a', {});
-        $('body').on('click','#lightbox2020>a',function(event){
-             //console.log($('#lightbox2020').attr("lightbox")+"...."+(typeof($('#lightbox2020').attr("lightbox")) == "undefined")+"......"+$('#lightbox2020').attr("id"));
-            if(!$('#lightbox2020').attr("lightbox")||typeof($('#lightbox2020').attr("lightbox")) == "undefined"){
-                $('#lightbox2020').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox2020>a', {}); $lightbox.refresh();$lightbox.open();}            
+        $('body').on('click','#lightbox20191>a',function(event){
+            if(!$('#lightbox20191').attr("lightbox")||typeof($('#lightbox20191').attr("lightbox")) == "undefined"){
+                $('#lightbox20191').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox20191>a', {}); $lightbox.refresh();$lightbox.open();}            
+            event.preventDefault();});
+        $('body').on('click','#lightbox20192>a',function(event){
+            if(!$('#lightbox20192').attr("lightbox")||typeof($('#lightbox20192').attr("lightbox")) == "undefined"){
+                $('#lightbox20192').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox20192>a', {}); $lightbox.refresh();$lightbox.open();}            
             event.preventDefault();});
 });
 //        $(function() {
