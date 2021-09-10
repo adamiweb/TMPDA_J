@@ -27,14 +27,15 @@
             position: fixed;
             right: 10px;
             bottom: 10px;
+            transition: transform 0.5s;
+            transform: translateX(200px);
 
             &.hide {
-            transition: transform 0.2s;
-            transform: translateX(120%);
+            transform: translateX(-100px);
             }
             
             &:hover {
-            background-color: #E8E8E8;
+            color: #E8E8E8;
         }
         .xxx {
             transition: transform 0.2s;
