@@ -29,12 +29,11 @@
             bottom: 10px;
             transform: translateX(0);
             transition: transform 0.2s;
-            transform: translateX(120%);
+            &.hide {
+                transform: translateX(120%);
+            }
         }
-        &.hide {
-            transform: translateX(120%);
-        }
-        .fa-arrow-alt-circle-up:before {
+        .fa-arrow-alt-circle-up {
             content: "\f35b"
         }
     </style>
