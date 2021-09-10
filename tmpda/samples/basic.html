@@ -126,13 +126,13 @@ $(function() {
     });
     */
     $(window).scroll(function () {
+        console.log($(window).scrollTop());
       if ($(window).scrollTop() > 200) {
         if ($(".goTop").hasClass("hide")) {
           $(".goTop").toggleClass("hide");
         }
       } else {
-          console.log($(".goTop").hasClass("hide"));
-        $(".goTop").toggleClass("hide");
+        $(".goTop").addClass("hide");
       }
     });
 
