@@ -12,27 +12,28 @@
     <link rel="stylesheet" href="../dist/jquery.timeline.min.css">
     <link rel="stylesheet" href="../dist/simple-lightbox.css">
     <style>
+        .goTop .goTopBtn {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .goTop .goTopBtn .fa-arrow-alt-circle-up {
+            color: #3d82ad;
+        }
+        .fa-arrow-alt-circle-up {
+            color: $primary;
+            content:"\f35b";
+        }
         .goTop {
-              position: fixed;
-              right: 10px;
-              bottom: 10px;
-              .goTopBtn {
-                background-color: #3d82ad;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                .fa-arrow-alt-circle-up {
-                  color: $primary;
-                  content:"\f35b";
-                }
-              }
-            //圖示水平移動位置
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
             transform: translateX(0);
             transition: transform 0.2s;
-            //圖示隱藏
-            &.hide {
-              transform: translateX(120%);
-            }
+        }
+        .goTop.hide {
+          transform: translateX(120%);
         }
     </style>
 </head>
