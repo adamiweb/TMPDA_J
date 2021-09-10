@@ -27,11 +27,12 @@
             position: fixed;
             right: 10px;
             bottom: 10px;
-            transform: translateX(140%);
-            &.hide {
-                transition: transform 0.2s;
-                transform: translateX(120%);
-            }
+            transition: transform 0.2s;
+            transform: translateX(0);
+        }
+        .goTop.hide {
+            transition: transform 0.2s;
+            transform: translateX(120%);
         }
         .fa-arrow-alt-circle-up {
             content: "\f35b"
