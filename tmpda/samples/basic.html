@@ -23,8 +23,11 @@
         .goTop .goTopBtn .fa-arrow-alt-circle-up {
             color: #3d82ad;
 
-            &:hover {
-                color: #E8E8E8;
+            transition: transform 0.5s;
+            transform: translateY(0);
+
+            &.hide {
+            transform: translateY(100%);
             }
 
         }
@@ -32,12 +35,6 @@
             position: fixed;
             right: 10px;
             bottom: 10px;
-            transition: transform 0.5s;
-            transform: translateY(-100px);
-
-            &.hide {
-            transform: translateY(200px);
-            }
         }
     </style>
 </head>
