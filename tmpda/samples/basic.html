@@ -23,12 +23,21 @@
         .goTop .goTopBtn .fa-arrow-alt-circle-up {
             color: #3d82ad;
             transition: transform 0.5s;
-            
+    animation-name:oxxo;
+    animation-duration:2s;
             &.hide {
             transform: translateY(300%);
             }
 
         }
+@keyframes oxxo{
+    from{
+        bottom:0;
+    }
+    to{
+        bottom:-100px;
+    }
+}
         .goTop {
             position: fixed;
             right: 10px;
