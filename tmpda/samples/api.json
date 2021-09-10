@@ -27,6 +27,57 @@
             "link": null
         }
 
+    ],
+
+    "2018" : [
+        {
+            "title": "參訪羅浮山影視基地",
+            "image" : "./InfoDocs/news/Event_201801_22.jpg,./InfoDocs/news/Event_201801_23.jpg,./InfoDocs/news/Event_201801_24.jpg",
+            "description": "2018年1月5日至1月7日，本協會朱程吾理事、楊偉舟理事、孫正國理事、彭麗華秘書長一行赴深圳參加研討會並參訪羅浮山影視基地，由 MPA 何偉雄會長安排接待，並於今年三月的香港電影節舉辦結盟發布會，成立「亞太電影工業聯盟」。",
+            "link": null
+        },
+        {
+            "title": "舉辦2018年影視媒合會",
+            "image" : "./InfoDocs/news/Event_201801_25.jpg,./InfoDocs/news/Event_201801_26.jpg,./InfoDocs/news/Event_201801_27.jpg",
+            "description": "2018年1月11日本協會舉辦2018影視媒合會，由13個本會會員籌拍中的影視企劃案進行路演，並邀集了威視、影一、華文創、華聯國際、大朝電視傳媒、滿滿額娛樂等11家影視創投及製作公司與會進行媒合。",
+            "link": null
+        },
+        {
+            "title": "與廈門市影視劇本學會簽署合作協議",
+            "description": "2018年3月13日本會與廈門市影視劇本學會簽署海峽兩岸影視(劇本創作)合作框架協議，共同成立交流服務平臺，進一步推動兩岸影視業的交流合作發展。",
+            "link": null
+        },
+        {
+            "title": "與福建省影視文化傳媒行業協會簽署合作協議",
+            "image" : "./InfoDocs/news/Event_201803_28.jpg,./InfoDocs/news/Event_201803_29.jpg",
+            "description": "2018年3月16日，吳理事長受會長陳瀚海先生邀請出席福建省影視文化傳媒行業協會成立大會，並於會中與陳文默秘書長簽屬合作協議。",
+            "link": null
+        },
+        {
+            "title": "香港電影節簽署中港台製作及發行備忘錄",
+            "image" : "./InfoDocs/news/Event_201803_30.jpg,./InfoDocs/news/Event_201803_31.jpg,./InfoDocs/news/Event_201803_32.jpg",
+            "description": "2018年3月20日，吳理事長受邀出席【大灣區夢工廠】論壇，與香港電影製作發行協會理事長黃百鳴先生、香港銀都機構總裁陳一奇先生、中國羅浮山影視文化產業基地首席執行官張珈銘先生、創意香港總監曾昭學先生以及廣東省電影行業協會長陳長兵先生對談，並簽署中港台製作發行備忘錄，一同為亞太地區電影發展努力。",
+            "link": null
+        },
+        {
+            "title": "協辦第十屆海峽影視季「閩台電影周」活動",
+            "image" : "./InfoDocs/news/Event_201806_33.jpg,./InfoDocs/news/Event_201806_34.jpg,./InfoDocs/news/Event_201806_35.jpg,./InfoDocs/news/Event_201806_35.jpg,./InfoDocs/news/Event_201806_37.jpg,./InfoDocs/news/Event_201806_38.jpg",
+            "description": "本會為第十屆海峽影視季「閩台電影周」活動的承辦單位\n2018年6月6日至6月9日，由吳理事長帶領《老師你會不會回來》\n《癡情男子漢》《52赫茲我愛你》《吃吃的愛》《小貓巴克里》\n《黑熊森林》《請愛我的女朋友》《藍色大門》及《青少年哪吒》\n等9部作品的主創人員參加開幕晚會及影展活動。",
+            "link": null
+        },
+        {
+            "title": "與福建省影視文化傳媒行業協會舉辦影視推介會",
+            "image" : "./InfoDocs/news/Event_201806_39.jpg,./InfoDocs/news/Event_201806_40.jpg,./InfoDocs/news/Event_201806_41.jpg",
+            "description": "2018年6月7日，本會邀集會員正在籌備中的9個影視企劃案:\n《角頭2 外傳》《角頭3》《夢醒30歲》《與往事乾杯》《對面》《極限女神》《掌中的星星》《承諾》及《海裡的一條河》前往路演，未來將透過福建影視文化傳媒行業協會協調合拍事宜，期待能搭建起兩岸製作發行的橋樑。",
+            "link": null
+        },
+        {
+            "title": "參加第九屆中國國際新媒體短片節",
+            "image" : "./InfoDocs/news/Event_201811_42.jpg,./InfoDocs/news/Event_201811_43.jpg,./InfoDocs/news/Event_201811_44.jpg",
+            "description": "承繼2017年第一次參與短片節打下的基礎，2018年11月由吳高雄\n理事長領隊，蒐集了20多部台灣優秀短片作品前往參加市場交易展，並於會場舉行了盛大的台灣短片推介會，講述近年台灣短片製作趨勢、旺盛的創作活力及新的獲利模式，並受邀參觀華強創意園區。",
+            "link": null
+        }
+
     ]
 
 }
