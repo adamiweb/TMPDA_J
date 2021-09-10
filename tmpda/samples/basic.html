@@ -11,7 +11,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../dist/jquery.timeline.min.css">
     <link rel="stylesheet" href="../dist/simple-lightbox.css">
-    <link rel='stylesheet' href='https://hsuchihting.github.io/lib/font-awesome/css/font-awesome.min.css'>
+    <!--<link rel='stylesheet' href='https://hsuchihting.github.io/lib/font-awesome/css/font-awesome.min.css'>-->
     <style>
 .fa {
     display: inline-block;
@@ -58,6 +58,13 @@
       color: $primary;
     }
   }
+}
+//圖示水平移動位置
+transform: translateX(0);
+transition: transform 0.2s;
+//圖示隱藏
+&.hide {
+  transform: translateX(120%);
 }
     </style>
 </head>
