@@ -80,7 +80,7 @@ window.addEventListener("load", function(event) {
              console.log($('#lightbox2020').attr("lightbox")+"...."+(typeof($('#lightbox2020').attr("lightbox")) == "undefined")+"......"+$('#lightbox2020').attr("id"));
             if(!$('#lightbox2020').attr("lightbox")||typeof($('#lightbox2020').attr("lightbox")) == "undefined"){
                 $('#lightbox2020').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox2020>a', {}); }
-            console.log($lightbox.close+"....."+$('#lightbox2020 > a').open);$lightbox.destroy;$('#lightbox2020 > a').open;$('#lightbox2020 > a').open;
+            console.log($lightbox.close+"....."+$('#lightbox2020 > a').open);$lightbox.refresh();$lightbox.open();
             event.preventDefault();});
 });
 //        $(function() {
