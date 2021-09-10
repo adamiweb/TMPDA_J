@@ -27,10 +27,22 @@
             position: fixed;
             right: 10px;
             bottom: 10px;
-            transition: transform 0.2s;
-            transform: translateX(0);
+            visibility: hidden;
+            
+            &.show {
+            visibility: visible;
+            opacity: 1;
+            }
+
+            &.hide {
+            visibility: hidden;
+            opacity: 0;
+            }
+            
+            &:hover {
+            background-color: #E8E8E8;
         }
-        .goTop.hide {
+        .xxx {
             transition: transform 0.2s;
             transform: translateX(220%);
         }
@@ -108,6 +120,7 @@ $(function() {
       );
     });
 
+/*    
     $(window).scroll(function () {
       if ($(window).scrollTop() > 200) {
         if ($(".goTop").hasClass("hide")) {
@@ -117,6 +130,17 @@ $(function() {
         $(".goTop").addClass("hide");
       }
     });
+    */
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 200) {
+//        if ($(".goTop").hasClass("show")) {
+          $(".goTop").toggleClass("show");
+//        }
+      } else {
+        $(".goTop").addClass("hide");
+      }
+    });
+
 });
         
 window.addEventListener("load", function(event) {
