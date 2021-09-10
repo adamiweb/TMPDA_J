@@ -69,7 +69,7 @@ $(function() {
 window.addEventListener("load", function(event) {
       //alert(document.readyState);
 //          var $lightbox2020;
-//          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+          var $lightbox2020;
 //          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
 //          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
 
@@ -79,7 +79,7 @@ window.addEventListener("load", function(event) {
         $('body').on('click','#lightbox2020>a',function(event){
             event.preventDefault(); console.log($('#lightbox2020').attr("lightbox")+"...."+(typeof($('#lightbox2020').attr("lightbox")) == "undefined")+"......"+$('#lightbox2020').attr("id"));
             if(!$('#lightbox2020').attr("lightbox")||typeof($('#lightbox2020').attr("lightbox")) == "undefined"){
-                $('#lightbox2020').attr("lightbox",true);new SimpleLightbox('#lightbox2020 a', {});console.log(this+"...."+event.target+"...."+event.detail);} });
+                $('#lightbox2020').attr("lightbox",true);$lightbox2020=new SimpleLightbox('#lightbox2020 a', {});console.log(this+"...."+event.target+"...."+event.data.value);} });
 });
 //        $(function() {
 //          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
