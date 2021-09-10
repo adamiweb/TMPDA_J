@@ -36,7 +36,7 @@
 <body>
     <div class="container">
         <div class="goTop">
-          <a href="#" class="goTopBtn jq-goTop">
+          <a href="#" class="goTopBtn /">
             <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
           </a>
         </div>
@@ -91,24 +91,26 @@ readyLoad(callme);*/
 //          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
 //   });
 
-$(".jq-goTop").click(function (e) {
-  e.preventDefault();
-  $("html,body").animate(
-    {
-      scrollTop: 0,
-    },
-    600
-  );
-});
+$(function() {
+    $(".jq-goTop").click(function (e) {
+      e.preventDefault();
+      $("html,body").animate(
+        {
+          scrollTop: 0,
+        },
+        600
+      );
+    });
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 200) {
-    if ($(".goTop").hasClass("hide")) {
-      $(".goTop").toggleClass("hide");
-    }
-  } else {
-    $(".goTop").addClass("hide");
-  }
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 200) {
+        if ($(".goTop").hasClass("hide")) {
+          $(".goTop").toggleClass("hide");
+        }
+      } else {
+        $(".goTop").addClass("hide");
+      }
+    });
 });
         
 window.addEventListener("load", function(event) {
