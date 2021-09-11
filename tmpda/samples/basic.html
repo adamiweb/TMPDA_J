@@ -23,21 +23,21 @@
         
         .goTop .goTopBtn .fa-arrow-alt-circle-up {
             color: #3d82ad;
-            transform: translateY(0);
-
-            &.hide {
-            width:70px;
-            background-color:red;
-            transition-duration: 2s;
-            transition-property:width;
-            }
-
         }
 
         .goTop {
             position: fixed;
             right: 10px;
             bottom: 10px;
+            transform: translateX(0);
+            transition: transform 0.2s;
+            
+            &.hide {
+            width:70px;
+            background-color:red;
+            transition-duration: 2s;
+            transition-property:width;
+            }
         }
     </style>
 </head>
