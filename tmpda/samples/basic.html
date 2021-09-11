@@ -13,15 +13,10 @@
     <link rel="stylesheet" href="../dist/simple-lightbox.css">
     <!--<link rel='stylesheet' href='https://hsuchihting.github.io/lib/font-awesome/css/font-awesome.min.css'>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <style>
-        .goTop .goTopBtn {
-            background-color: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
 
-        .goTop {
+        .gotop {
             position:fixed;
             z-index:90;
             right:30px;
@@ -46,7 +41,7 @@
 <body>
     <div class="container">
         <div class="goTop">
-         <a href="#" class="goTopBtn jq-goTop">
+         <a href="#" class="goTopBtn">
 <!--            <i class="fas fa-arrow-alt-circle-up fa-3x"></i>-->
              <i class="fa fa-angle-up"></i>
           </a>
@@ -57,7 +52,6 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="../dist/jquery.timeline.min.js"></script>
     <script src="../dist/simple-lightbox.jquery.min.js"></script>
     <script>
@@ -103,7 +97,7 @@ readyLoad(callme);*/
 //   });
 
 $(function() {
-    $(".jq-goTop").click(function (e) {
+    $(".goTopBtn").click(function (e) {
       e.preventDefault();
       $("html,body").animate(
         {
