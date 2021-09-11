@@ -111,10 +111,10 @@ readyLoad(callme);*/
 
 //$(function() {
 //          const $lightbox2021 = new SimpleLightbox('#lightbox2021 a', {});
-//          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
+//          const $lightbox2020 = new SeimpleLightbox('#lightbox2020 a', {});
 //   });
 
-$(function() {
+$(function(e) {
     $(".goTopBtn").click(function (e) {
       e.preventDefault();
       $("html,body").animate(
@@ -125,15 +125,15 @@ $(function() {
       );
     });
 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 200) {
-$(".goTop").show(10).animate({bottom:"25px"},10);
+    e(window).scroll(function () {
+      if (e(this).scrollTop() > 200) {
+e(".goTop").show(10).animate({bottom:"25px"},10);
 //        if ($(".goTop").hasClass("hide")) {
 //          $(".goTop").toggleClass("hide");
 //            $(".goTop").fadeIn();
 //        }
       } else {
-$(".goTop").animate({bottom:"-60px"},10);
+e(".goTop").animate({bottom:"-60px"},10);
 //        $(".goTop").addClass("hide");
 //          $(".goTop").fadeOut();
       }/*
