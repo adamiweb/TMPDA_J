@@ -127,13 +127,15 @@ $(function() {
 
     $(window).scroll(function () {
       if ($(this).scrollTop() > 200) {
-        if ($(".goTop").hasClass("hide")) {
-          $(".goTop").toggleClass("hide");
-            $(".goTop").fadeIn();
+$(".goTop").show(10).animate({bottom:"25px"},10);
+//        if ($(".goTop").hasClass("hide")) {
+//          $(".goTop").toggleClass("hide");
+//            $(".goTop").fadeIn();
         }
       } else {
-        $(".goTop").addClass("hide");
-          $(".goTop").fadeOut();
+$(".goTop").animate({bottom:"-60px"},10);
+//        $(".goTop").addClass("hide");
+//          $(".goTop").fadeOut();
       }/*
         $(".goTop").fadeIn();
     }else{
