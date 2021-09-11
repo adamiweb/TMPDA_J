@@ -41,9 +41,9 @@
             text-align: center;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 
-            transform: translateX(0);
+/*            transform: translateX(0);
             transition: transform 0.5s;
-
+*/
         }
         
         .goTop.hide {
@@ -125,15 +125,15 @@ $(function(e) {
       );
     });
 
-    e(window).scroll(function () {
+    $(window).scroll(function () {
       if (e(this).scrollTop() > 200) {
-e(".goTop").show(10).animate({bottom:"25px"},10);
+$(".goTop").show(10).animate({bottom:"25px"},10);
 //        if ($(".goTop").hasClass("hide")) {
 //          $(".goTop").toggleClass("hide");
 //            $(".goTop").fadeIn();
 //        }
       } else {
-e(".goTop").animate({bottom:"-60px"},10);
+$(".goTop").animate({bottom:"-60px"},10);
 //        $(".goTop").addClass("hide");
 //          $(".goTop").fadeOut();
       }/*
