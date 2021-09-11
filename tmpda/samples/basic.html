@@ -30,17 +30,11 @@
             right: 10px;
             bottom: 10px;
             transform: translateX(0);
-            transition: transform 0.2s;
-            width:70px;
-            background-color:red;
-            transition-duration: 2s;
-            transition-property:width;
-            
+            transition: transform 0.5s;
         }
             .goTop.hide {
-            width:200px;
-            background-color:blue;
-            }
+                transform: translateX(120%);
+        }
         
     </style>
 </head>
@@ -102,7 +96,7 @@ readyLoad(callme);*/
 //          const $lightbox2020 = new SimpleLightbox('#lightbox2020 a', {});
 //   });
 
-$(function() {
+//$(function() {
     $(".jq-goTop").click(function (e) {
       e.preventDefault();
       $("html,body").animate(
@@ -123,7 +117,7 @@ $(function() {
       }
     });
 
-});
+//});
         
 window.addEventListener("load", function(event) {
       //alert(document.readyState);
