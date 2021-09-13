@@ -153,6 +153,16 @@ window.addEventListener("load", function(event) {
         //$(".goTop").addClass("hide");
 
 
+//2020
+        $('body').on('click','#lightbox20201>a',function(event){
+            if(!$('#lightbox20201').attr("lightbox")||typeof($('#lightbox20201').attr("lightbox")) == "undefined"){
+                $('#lightbox20201').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox20201>a', {}); $lightbox.refresh();$lightbox.open();}            
+            event.preventDefault();});
+        $('body').on('click','#lightbox20202>a',function(event){
+            if(!$('#lightbox20202').attr("lightbox")||typeof($('#lightbox20202').attr("lightbox")) == "undefined"){
+                $('#lightbox20202').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox20202>a', {}); $lightbox.refresh();$lightbox.open();}            
+            event.preventDefault();});
+
 //2019
         $('body').on('click','#lightbox20191>a',function(event){
             if(!$('#lightbox20191').attr("lightbox")||typeof($('#lightbox20191').attr("lightbox")) == "undefined"){
