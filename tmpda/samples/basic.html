@@ -162,6 +162,10 @@ window.addEventListener("load", function(event) {
             if(!$('#lightbox20202').attr("lightbox")||typeof($('#lightbox20202').attr("lightbox")) == "undefined"){
                 $('#lightbox20202').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox20202>a', {}); $lightbox.refresh();$lightbox.open();}            
             event.preventDefault();});
+        $('body').on('click','#lightbox20203>a',function(event){
+            if(!$('#lightbox20203').attr("lightbox")||typeof($('#lightbox20203').attr("lightbox")) == "undefined"){
+                $('#lightbox20203').attr("lightbox",true);$lightbox=new SimpleLightbox('#lightbox20203>a', {}); $lightbox.refresh();$lightbox.open();}            
+            event.preventDefault();});
 
 //2019
         $('body').on('click','#lightbox20191>a',function(event){
